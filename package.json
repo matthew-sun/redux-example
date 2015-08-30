@@ -15,7 +15,7 @@
   ],
   "author": "Matthew Sun <matthew-sun@foxmail.com> (http://github.com/matthew-sun)",
   "license": "MIT",
-  "homepage": "https://github.com/matthew-sun",
+  "homepage": "https://github.com/matthew-sun/redux-example",
   "devDependencies": {
     "babel-core": "^5.4.7",
     "babel-loader": "^5.1.2",
