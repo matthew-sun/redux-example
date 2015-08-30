@@ -1,6 +1,6 @@
 # redux-example
 
- 用案列阐述使用Redux管理React应用的方法。
+ 使用Redux管理你的React应用。
  ![Manage Items](http://matthew-sun.github.io/images/manage-items.gif)
  
 ##使用
