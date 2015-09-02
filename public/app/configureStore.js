@@ -8,13 +8,22 @@ if(__DEBUG__) {
     buildStore = compose(
       applyMiddleware(thunk),
       require('redux-devtools').devTools(),
-      require('redux-devtools').persistState(window.location.href.match(/[?&]debug_session=([^&]+)\b/)),
-      createStore
-    )
+      require('redux-devtools').persistState(window.location.href.match(/[?&]debug_session=([^&]+)\b/))
+    )(createStore)
 }else {
-    buildStore = compose(applyMiddleware(thunk), createStore)
+    buildStore = compose(applyMiddleware(thunk))(createStore)
 }
 
 export default function configureStore(initialState) {
-    return buildStore(rootReducer, initialState);
+  const store = buildStore(rootReducer, initialState);
+
+  if (module.hot) {
+    // Enable Webpack hot module replacement for reducers
+    module.hot.accept('./reducers', () => {
+      const nextRootReducer = require('./reducers');
+      store.replaceReducer(nextRootReducer);
+    });
+  }
+
+  return store;
 }
