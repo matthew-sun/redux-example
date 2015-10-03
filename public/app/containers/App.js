@@ -17,7 +17,7 @@ let App = React.createClass({
         let styles = {
             width: '200px',
             margin: '30px auto 0'
-        }
+        };
         const actions = this.props.actions;
         return (
             <div style={styles}>
@@ -28,7 +28,7 @@ let App = React.createClass({
             </div>
         )
     }
-})
+});
 
 export default connect(state => ({
     items: state.items,
