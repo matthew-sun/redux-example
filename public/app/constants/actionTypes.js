@@ -1,4 +1,4 @@
-import keyMirror from 'react/lib/keyMirror';
+import keyMirror from 'fbjs/lib/keyMirror';
 
 export default keyMirror({
     ADD_ITEM: null,

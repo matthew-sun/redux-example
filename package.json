@@ -1,11 +1,12 @@
 {
   "name": "redux--example",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "redux--example",
   "scripts": {
     "start": "node server.js",
     "debug": "DEBUG=true node server.js",
-    "dev": "webpack --config webpack.config.min.js"
+    "dev": "webpack --config webpack.config.min.js",
+    "lint": "eslint public/app"
   },
   "keywords": [
     "react",
@@ -16,23 +17,39 @@
   "author": "Matthew Sun <matthew-sun@foxmail.com> (http://github.com/matthew-sun)",
   "license": "MIT",
   "homepage": "https://github.com/matthew-sun/redux-example",
+  "peerDependencies": {
+    "node-sass": "^3.3.3",
+    "webpack": "^1.12.2"
+  },
   "devDependencies": {
     "babel-core": "^5.4.7",
+    "babel-eslint": "^3.1.9",
     "babel-loader": "^5.1.2",
+    "babel-plugin-react-transform": "^1.1.1",
+    "react-transform-catch-errors": "^1.0.0",
+    "react-transform-hmr": "^1.0.0",
+    "eslint": "^1.3.1",
+    "eslint-plugin-react": "^2.3.0",
     "css-loader": "^0.16.0",
-    "react-hot-loader": "^1.2.7",
+    "sass-loader": "^2.0.1",
     "style-loader": "^0.12.3",
-    "webpack": "^1.9.6",
-    "webpack-dev-server": "^1.8.2"
+    "redbox-react": "^1.0.1",
+    "webpack": "^1.12.2",
+    "webpack-dev-server": "^1.12.1",
+    "webpack-dev-middleware": "^1.2.0",
+    "webpack-hot-middleware": "^2.0.0",
+    "express": "^4.13.3"
   },
   "dependencies": {
-    "react": "^0.13.3",
-    "react-redux": "^0.9.0",
-    "redux": "^2.0.0",
-    "immutable": "^3.7.4",
+    "react": "^0.14.1",
+    "react-dom": "^0.14.1",
+    "fbjs": "^0.4.0",
+    "react-redux": "^4.0.0",
+    "redux": "^3.0.4",
+    "immutable": "^3.7.5",
     "classnames": "~2.1.3",
-    "redux-devtools": "^1.0.2",
-    "redux-thunk": "^0.1.0",
+    "redux-devtools": "^2.1.5",
+    "redux-thunk": "^1.0.0",
     "react-immutable-render-mixin": "^0.8.1",
     "lodash": "^3.10.1"
   }
