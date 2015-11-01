@@ -1,12 +1,12 @@
-import { FILTER_ITEM } from '../constants/actionTypes';
+import { FILTER_ITEM } from '../constants/actionTypes'
 
-const initialFilterItem = '';
+const initialFilterItem = ''
 
 export default function filter(state = initialFilterItem, action) {
     switch(action.type) {
         case FILTER_ITEM:
-            return action.filterItem;
+            return action.filterItem
         default:
-            return state;
+            return state
     }
 }

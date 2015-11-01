@@ -20,7 +20,13 @@ module.exports = {
         __DEBUG__: JSON.stringify(JSON.parse(process.env.DEBUG || 'false'))
     })
   ],
-  
+  eslint: {
+    configFile: '.eslintrc'
+  },
+  /**
+   * If need eslint, add it in loaders.
+   * {test: /\.js$/,loader: "eslint-loader",exclude: /node_modules/,}
+   */
   module: {
     loaders: [{
       test: /\.js$/,

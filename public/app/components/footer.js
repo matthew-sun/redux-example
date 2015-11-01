@@ -1,5 +1,5 @@
-import React from 'react';
-import ImmutableRenderMixin from 'react-immutable-render-mixin';
+import React from 'react'
+import ImmutableRenderMixin from 'react-immutable-render-mixin'
 
 let Footer = React.createClass({
     mixins: [ImmutableRenderMixin],
@@ -13,4 +13,4 @@ let Footer = React.createClass({
     }
 })
 
-export default Footer;
+export default Footer

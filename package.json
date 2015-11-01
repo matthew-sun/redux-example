@@ -33,6 +33,7 @@
     "css-loader": "^0.16.0",
     "sass-loader": "^2.0.1",
     "style-loader": "^0.12.3",
+    "eslint-loader": "^1.1.0",
     "redbox-react": "^1.0.1",
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.12.1",
@@ -52,5 +53,13 @@
     "redux-thunk": "^1.0.0",
     "react-immutable-render-mixin": "^0.8.1",
     "lodash": "^3.10.1"
+  },
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthew-sun/redux-example.git"
+  },
+  "bugs": {
+    "url": "https://github.com/matthew-sun/redux-example/issues"
   }
 }

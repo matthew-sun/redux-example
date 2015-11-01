@@ -1,5 +1,5 @@
-import React from 'react';
-import ImmutableRenderMixin from 'react-immutable-render-mixin';
+import React from 'react'
+import ImmutableRenderMixin from 'react-immutable-render-mixin'
 
 let SearchBar = React.createClass({
     mixins: [ImmutableRenderMixin],
@@ -12,4 +12,4 @@ let SearchBar = React.createClass({
     }
 })
 
-export default SearchBar;
+export default SearchBar

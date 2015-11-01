@@ -1,11 +1,11 @@
-import { ADD_ITEM, DELETE_ITEM, DELETE_ALL, FILTER_ITEM } from '../constants/actionTypes';
+import { ADD_ITEM, DELETE_ITEM, DELETE_ALL, FILTER_ITEM } from '../constants/actionTypes'
 
-export function addItem(item) {
+export function addItem() {
     return dispatch => {
         setTimeout(() => dispatch({type: ADD_ITEM}), 1000)
     }
 }
-export function deleteItem(item, e) {
+export function deleteItem(item) {
     return {
         type: DELETE_ITEM,
         item
@@ -17,7 +17,8 @@ export function deleteAll() {
     }
 }
 export function filterItem(e) {
-    let filterItem = e.target.value;
+    let filterItem = e.target.value
+
     return {
         type: FILTER_ITEM,
         filterItem
