@@ -16,7 +16,7 @@ module.exports = {
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin(),
     new webpack.optimize.UglifyJsPlugin({compress: {warnings: false}}),
-    new webpack.DefinePlugin({  
+    new webpack.DefinePlugin({
         __DEBUG__: JSON.stringify(JSON.parse(process.env.DEBUG || 'false'))
     })
   ],
